@@ -16,11 +16,10 @@
     >
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Developer Connector - Add Education</title>
+    <title>Developer Connector - Add Experience</title>
   </head>
 
   <body>
-
     <nav class="navbar bg-dark" aria-label="secondary_nav">
       <h1>
         <a href="index.html"><i class="fas fa-code"></i> DevConnector</a>
@@ -41,46 +40,33 @@
         </li>
       </ul>
     </nav>
-    
+
     <section class="container">
       <h1 class="large text-primary">
-        Add Your Education
+       Add An Experience
       </h1>
       <p class="lead">
-        <i class="fas fa-graduation-cap"></i> Add any school, bootcamp, etc that
-        you have attended
+        <i class="fas fa-code-branch"></i> Add any developer/programming
+        positions that you have had in the past
       </p>
       <small>* = required field</small>
-
       <!--Form-->
       <form class="form">
         <div class="form-group">
-          <input
-            type="text"
-            placeholder="* School or Bootcamp"
-            name="school"
-            required
-          >
+          <input type="text" placeholder="* Job Title" name="title" required>
         </div>
         <div class="form-group">
-          <input
-            type="text"
-            placeholder="* Degree or Certificate"
-            name="degree"
-            required
-          >
+          <input type="text" placeholder="* Company" name="company" required>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Field Of Study" name="fieldofstudy">
+          <input type="text" placeholder="Location" name="location">
         </div>
         <div class="form-group">
           <h4>From Date</h4>
           <input type="date" name="from">
         </div>
-        <div class="form-group">
-          <p>
-            <input type="checkbox" name="current" value=""> Current School or Bootcamp
-          </p>
+         <div class="form-group">
+          <p><input type="checkbox" name="current" value=""> Current Job</p>
         </div>
         <div class="form-group">
           <h4>To Date</h4>
@@ -91,12 +77,13 @@
             name="description"
             cols="30"
             rows="5"
-            placeholder="Program Description">
+            placeholder="Job Description">
           </textarea>
         </div>
         <input type="submit" class="btn btn-primary my-1">
         <a class="btn btn-light my-1" href="dashboard.html">Go Back</a>
       </form>
     </section>
+  
   </body>
 </html>
